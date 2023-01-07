@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { ShubhangiComponent } from './shubhangi/shubhangi.component';
 
 import { SandeepComponent } from './sandeep/sandeep.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ShubhangiComponent,
-    SandeepComponent
+    SandeepComponent,
+    HomeComponent
 
   ],
   imports: [
