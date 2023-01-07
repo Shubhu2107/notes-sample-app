@@ -1,0 +1,23 @@
+html,body{
+    background: #f1f1f1;
+    margin: 20px;
+}
+.card-header {
+    padding: .40rem .40rem;
+    background-color: rgba(0,0,0,.9);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.card-header:hover,.card-header:focus {
+    padding: .40rem .40rem;
+    background-color: rgba(0,0,0,.75);
+}
+.btn-link {
+    font-weight: 400;
+    color: #fff;
+    outline: none;
+    width: 100%;
+    text-align: left;
+}
+
+.btn:hover, .btn:focus{box-shadow: none;}
