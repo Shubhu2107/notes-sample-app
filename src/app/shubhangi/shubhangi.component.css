@@ -1,11 +1,18 @@
 
   .wrapper {
-    width: 1280px;
-    height: 100%;
+    width: 1024px;
+    height: 600px;
     margin: auto;
     padding: 2%;
 }
-
+.align_center{
+  text-align: center;
+    background: rgb(174, 174, 241);
+    margin: 0;
+    padding: 12px;
+    font-size: 28px;
+    line-height: 21px;
+}
 .compaire_header {
     text-align: center;
 }
