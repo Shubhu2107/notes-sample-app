@@ -3,19 +3,24 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './compo/home/home.component';
+import { CreateNewComponent } from './compo/create-new/create-new.component';
+import { SettingsComponent } from './compo/settings/settings.component';
+import { SearchComponent } from './compo/search/search.component';
+import { ColorComponentComponent } from './compo/color-component/color-component.component';
+import { CosmaticComponentComponent } from './compo/cosmatic-component/cosmatic-component.component';
 
-import { ShubhangiComponent } from './shubhangi/shubhangi.component';
-
-import { SandeepComponent } from './sandeep/sandeep.component';
-import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ShubhangiComponent,
-    SandeepComponent,
-    HomeComponent
+    HomeComponent,
+    CreateNewComponent,
+    SettingsComponent,
+    SearchComponent,
+    ColorComponentComponent,
+    CosmaticComponentComponent,
 
   ],
   imports: [
