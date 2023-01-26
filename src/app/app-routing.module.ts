@@ -8,7 +8,7 @@ import { CosmaticComponentComponent } from './compo/cosmatic-component/cosmatic-
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'create-new.component', component: CreateNewComponent },
   { path: 'settings', component: SettingsComponent },
   { path: 'search', component: SearchComponent },
