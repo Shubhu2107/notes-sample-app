@@ -9,7 +9,7 @@ import { SettingsComponent } from './compo/settings/settings.component';
 import { SearchComponent } from './compo/search/search.component';
 import { ColorComponentComponent } from './compo/color-component/color-component.component';
 import { CosmaticComponentComponent } from './compo/cosmatic-component/cosmatic-component.component';
-
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,6 +27,7 @@ import { CosmaticComponentComponent } from './compo/cosmatic-component/cosmatic-
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

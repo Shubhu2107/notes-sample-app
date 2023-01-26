@@ -7,6 +7,9 @@ import { FetchDataService } from 'src/app/services/fetch-data.service';
   styleUrls: ['./search.component.css']
 })
 export class SearchComponent {
+  searchTerm:any;
+  notesArray:any[] = [];
+  filteredArray:any[] = []
   ngOnInit(): void {
     this.getData()
   }
@@ -15,7 +18,10 @@ export class SearchComponent {
 
   getData(){
     this.fetchData.getData().subscribe(
-      res => {
+      (res:any) => {
+        for(let note of res.entries){
+          this.notesArray.push(note.API)
+        }
         console.log(res);
       },err => {
         console.log(err);
@@ -23,6 +29,16 @@ export class SearchComponent {
       }
     )
 
+  }
+
+  filterData(){
+     this.filteredArray = this.notesArray.filter(s => s.includes(this.searchTerm));
+     console.log('filtered data', this.filteredArray);
+  }
+
+
+  testlog(){
+    console.log('Seach array is', this.notesArray);
   }
 
 }
