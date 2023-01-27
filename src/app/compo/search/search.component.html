@@ -1,5 +1,7 @@
 <input type="text" [(ngModel)]="searchTerm">
-<button class="btn btn-primary" (click)="filterData()">Search</button>
+<button class="btn btn-primary" (click)="filterData()">Filter</button>
+<button class="btn btn-primary" (click)="mapData()">Map</button>
+<button class="btn btn-primary" (click)="reduceData()">Reduce</button>
 <ul *ngFor="let note of filteredArray">
   <li>{{note}}</li>
 </ul>
