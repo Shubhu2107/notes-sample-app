@@ -6,22 +6,13 @@ import { Injectable } from '@angular/core';
 })
 export class FetchDataService {
 
-  constructor(private htpp : HttpClient) { }
+  constructor(private http : HttpClient) { }
   getData(){
-    return this.htpp.get('https://api.publicapis.org/entries',)
+    return this.http.get('',)
   }
-
-  getOrg(token:any){
-    let header = {
-      token : token
-    }
-    return this.htpp.get('',{})
-  }
-
-  getUser(orgId:any){
-    let header = {
-      orgId : orgId
-    }
+  // check what is required in a post call & push new note in following function
+  addNote(){
+    return this.http.post('','')
   }
 
 }
