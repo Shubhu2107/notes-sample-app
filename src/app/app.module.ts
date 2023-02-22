@@ -20,8 +20,7 @@ import { FormsModule } from '@angular/forms';
     SettingsComponent,
     SearchComponent,
     ColorComponentComponent,
-    CosmaticComponentComponent,
-
+    CosmaticComponentComponent
   ],
   imports: [
     BrowserModule,

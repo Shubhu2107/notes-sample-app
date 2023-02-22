@@ -1,3 +1,12 @@
-<input type="text" [(ngModel)]="searchTerm">
-<button (click)="saveNotes()">Test</button>
+<div id="noteContainer" [hidden]="hideNoteContainer">
+	<div class="header">
+		<button class="btn addNoteBtn"></button>
+		<button class="btn closeNoteBlock" (click)="closeNoteBlock()"></button>
+	</div>
+	<textarea id="textarea" type="text" placeholder="Take a note..." [(ngModel)]="userinsertData"></textarea>
+	<button class="btn" (click)="postData()">Save</button>
+</div>
+
+<span *ngIf="userinsertData != '' ">Notes data "{{userinsertData}}"</span>
+
 <!-- use ngfor to load list of all notes in json -->

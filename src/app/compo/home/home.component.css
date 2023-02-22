@@ -1,0 +1,115 @@
+.header {
+	background: #e6b905;
+	height: 40px;
+	width: 100%;
+}
+
+#noteContainer {
+	background: #ddd;
+	width: 275px;
+	height: 250px;
+	margin: 2%;
+	padding: 2px;
+	border: 2px #ccc solid;
+	position: relative;
+	box-shadow: 2px 2px 12px rgb(0 0 0 / 20%);
+	transition: border 0.2s ease-in 0s;
+}
+
+#noteContainer:hover {
+	border: 2px #959595 solid;
+}
+
+#textarea {
+	background: #ddd;
+	overflow: auto;
+	resize: vertical;
+	width: 100%;
+	height: calc(100% - 35%);
+	border: 0;
+	resize: none;
+	overflow-y: auto;
+	padding: 5px;
+}
+
+#textarea:focus,
+#textarea:hover {
+	border: 0;
+	outline: none;
+}
+
+#textarea::placeholder {
+	color: #444;
+}
+
+.btn {
+	position: relative;
+	z-index: 1;
+	float: right;
+	color: #000;
+}
+
+.btn:before {
+	background-color: rgba(249, 58, 19, 0.32);
+	content: "";
+	display: block;
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -2;
+}
+
+.btn:after {
+	background-color: initial;
+	background-image: linear-gradient(92.83deg, #ff7426 0, #f93a13 100%);
+	bottom: 4px;
+	content: "";
+	display: block;
+	left: 4px;
+	overflow: hidden;
+	position: absolute;
+	right: 4px;
+	top: 4px;
+	transition: all 100ms ease-out;
+	z-index: -1;
+}
+
+.btn:focus,
+.btn:active,
+.btn:hover:not(:disabled):after {
+	bottom: 0;
+	left: 0;
+	right: 0;
+	top: 0;
+	transition-timing-function: ease-in;
+	box-shadow: none;
+}
+
+.addNoteBtn,.closeNoteBlock {
+	height: 40px;
+	width: 40px;
+	z-index: 1;
+}
+
+.addNoteBtn::before {
+	position: absolute;
+	content: "+";
+	font-size: 22px;
+	z-index: 1;
+}
+
+.closeNoteBlock {
+	height: 40px;
+	width: 40px;
+}
+
+.closeNoteBlock::before {
+	position: absolute;
+	content: "X";
+	font-size: 16px;
+	z-index: 1;
+	line-height: 37px;
+}
