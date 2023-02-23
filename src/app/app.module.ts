@@ -9,7 +9,7 @@ import { SettingsComponent } from './compo/settings/settings.component';
 import { SearchComponent } from './compo/search/search.component';
 import { ColorComponentComponent } from './compo/color-component/color-component.component';
 import { CosmaticComponentComponent } from './compo/cosmatic-component/cosmatic-component.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,  ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -26,7 +26,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

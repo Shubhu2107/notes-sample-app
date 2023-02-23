@@ -1,8 +1,11 @@
+<input type="text" [formControl]="favoriteColorControl" />
+<button class="" (click)="filterdata()">Submit</button>
 <div id="noteContainer" [hidden]="hideNoteContainer">
 	<div class="header">
-		<button class="btn addNoteBtn"></button>
+		<button class="btn addNoteBtn" ></button>
 		<button class="btn closeNoteBlock" (click)="closeNoteBlock()"></button>
 	</div>
+
 	<textarea id="textarea" type="text" placeholder="Take a note..." [(ngModel)]="userinsertData"></textarea>
 	<button class="btn" (click)="postData()">Save</button>
 </div>
